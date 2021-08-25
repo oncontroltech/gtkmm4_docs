@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+
+# Build folder of examples
+examples/3way_panned/build/
