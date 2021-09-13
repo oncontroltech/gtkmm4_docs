@@ -8,7 +8,7 @@ set (CMAKE_CXX_STANDARD 20
 # Set to "ON" to debug makefile commands
 set (CMAKE_VERBOSE_MAKEFILE ON)
 
-project (3way_panned)
+project (custom_renderer)
 
 # Adds the daemon executable to the project
 add_executable(${PROJECT_NAME})
@@ -20,8 +20,8 @@ pkg_check_modules(GTKMM REQUIRED gtkmm-4.0)
 target_sources (${PROJECT_NAME}
                 PRIVATE
                     main.cpp
-                    mainwindow.cpp mainwindow.hpp
-                    3way_panned.cpp 3way_panned.hpp)
+                    treewindow.cpp treewindow.hpp
+                    DequeCellRendererText.cpp DequeCellRendererText.hpp)
 
 # Adds several directories to the include path
 target_include_directories (${PROJECT_NAME}

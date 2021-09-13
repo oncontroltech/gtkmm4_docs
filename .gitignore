@@ -33,3 +33,4 @@
 
 # Build folder of examples
 examples/3way_panned/build/
+examples/custom_cellrenderer/build/
